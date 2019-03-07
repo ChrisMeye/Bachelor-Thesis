@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titel der Seite | Name der Website</title>
+  </head>
+  <body>
+  
+  <button id="csv">csv</button>
+  
+  
+  
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/json2csv"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="papaparse.min.js"></script>
+  <script>
+  var dataSet = null;
+  var newSet = [ ];
+  var ramTable = [ ];
+  
+  function getData( ){
+  
+	Papa.parse( "bom.csv", {
+		download: true,
+		complete: function( results ) {
+			dataSet = results.data;
+			console.log( dataSet );
+			syncData( );
+		}
+	} );
+  }
+  
+  
+  function syncData( ) {
+  
+	for(const originalEntry of dataSet) {
+		var childPart = { "ProductCode": originalEntry[3], "VersionNumber": originalEntry[4], "SoftwareName": originalEntry[5] };
+		var parentPart = { "ProductCode": originalEntry[0], "VersionNumber": originalEntry[1], "SoftwareName": "", "children": [childPart] };
+		
+		var alreadyAdd = false;
+		for(const newEntry of newSet) {
+			if(parentPart.ProductCode == newEntry.ProductCode) {
+				alreadyAdd = true;
+				newEntry.children.push( childPart );
+			}
+		}
+		
+		
+		if(!alreadyAdd) {
+			newSet.push( parentPart );
+		}
+	}
+	recursiveAdd( );
+	console.info( newSet );
+  }
+  
+  function recursiveAdd( ){
+  	var alreadyAdd = false;
+	
+		newSet.map( ( parent, b ) => {
+		
+			newSet.map( ( entry, c ) => {
+			
+				for(const child of entry.children) {
+					if(parent.ProductCode == child.ProductCode) {
+						child.children = parent.children;
+						
+						for(var i = 0; i < child.children.length; i++){
+							if(entry.ProductCode == child.children[i].ProductCode){ 
+								console.error("delete", child.children[i]); child.children.splice(i,1);
+							}
+						}
+					}
+				}
+				
+			});
+			
+		});
+	console.error(newSet);
+	console.error(aggDeep(newSet));
+	
+	
+
+	const Json2csvParser = json2csv.Parser;
+	var fields = ["ProductCode", "ram", "ramSum", "children.ProductCode", "children.ramSum", "children.children.ProductCode", "children.children.ram", "children.children.children.ProductCode", "children.children.children.ram"];
+	var fields2 = ["ProductCode", "ram"];
+	
+		
+	let json2csvParser = new Json2csvParser({ fields, unwind: ['children', 'children.children', 'children.children.children'] });
+	let csv = json2csvParser.parse(newSet);
+	
+	json2csvParser = new Json2csvParser({ fields2 });
+	let csv2 = json2csvParser.parse(ramTable);
+
+	document.body.innerHTML += csv2.replace(/"|,/g,' ').replace(/\n/gi, "\n<br>")+'<hr>';
+	document.body.innerHTML += csv.replace(/\n/gi, "\n<br>");
+
+
+  }
+  
+function aggDeep(array) {
+	  var rec = (obj, parent, lastParent) => {
+		for(const entry of obj) {
+		  if(entry.children){
+			entry.ramSum = 0;
+			rec(entry.children, parent, entry);
+		  }else{
+			ramTable.map((a,b)=>{
+				if(a.ProductCode == entry.ProductCode){
+					entry.ram = a.ram;
+				}
+			});
+			
+			if(!entry.ram){
+					entry.ram = Math.round(Math.PI*(ramTable.length+1) * 3000);
+					ramTable.push( { "ProductCode": entry.ProductCode, "ram": entry.ram } );
+			}
+			if(lastParent){
+				lastParent.ramSum += entry.ram;
+			}
+			if(parent.alreadyIncludedRam.indexOf(entry.ProductCode) == -1){
+				parent.ramSum += entry.ram;
+				parent.alreadyIncludedRam.push(entry.ProductCode);
+			}
+			
+			
+		  }
+		  
+		}
+	  }
+  
+	for(const entry of array) {
+		entry.ramSum = 0;
+		entry.alreadyIncludedRam = [];
+		if(entry.children) rec(entry.children, entry, null);
+	}
+
+}
+ 
+  
+  function deepCopy( obj ) {
+	return JSON.parse( JSON.stringify( obj ) );
+  }
+  
+  getData( );
+  function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+  
+  
+  
+  </script>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titel der Seite | Name der Website</title>
+  </head>
+  <body>
+
+  <button id="csv">csv</button>
+
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/json2csv"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="papaparse.min.js"></script>
+  <script>
+  var dataSet = null;
+  var osDataSet = null;
+  var allOS = [];
+  let newSet = [ ];
+  var ramTable = [ ];
+
+  function getData( ){
+
+	Papa.parse( "bom.csv", {
+		download: true,
+		complete: function( results ) {
+			dataSet = results.data;
+			syncData( );
+		}
+	} );
+  }
+    function getOsData( ){
+
+	Papa.parse( "os.csv", {
+		download: true,
+		complete: function( results ) {
+			allOS = deepCopy(results.data[0].slice(3));
+			osDataSet = deepCopy(results.data.slice(1));
+
+		getData( );
+		}
+	} );
+  }
+
+	getOsData( );
+
+
+  function syncData( ) {
+
+	for(const originalEntry of dataSet) {
+		var childPart = { "ProductCode": originalEntry[3], "SoftwareName": originalEntry[5] };
+		var parentPart = { "ProductCode": originalEntry[0], "SoftwareName": "", "children": [childPart] };
+
+		var alreadyAdd = false;
+		for(const newEntry of newSet) {
+			if(parentPart.ProductCode == newEntry.ProductCode) {
+				alreadyAdd = true;
+				newEntry.children.push( childPart );
+			}
+		}
+
+
+		if(!alreadyAdd) {
+			newSet.push( parentPart );
+		}
+	}
+	recursiveAdd( );
+  }
+
+  function recursiveAdd( ){
+  	var alreadyAdd = false;
+
+		newSet.map( ( parent, b ) => {
+
+			newSet.map( ( entry, c ) => {
+
+				for(const child of entry.children) {
+					if(parent.ProductCode == child.ProductCode) {
+						child.children = parent.children;
+
+						for(var i = 0; i < child.children.length; i++){
+							if(entry.ProductCode == child.children[i].ProductCode){
+								child.children.splice(i,1);
+							}
+						}
+					}
+				}
+
+			});
+
+		});
+		recursiveInclude(newSet);
+		recursiveInference(newSet);
+
+
+			for(const entry of newSet) {
+				entry.intersectionOS = [];
+				entry.accordanceToChildren = [];
+
+				for(var i = 0; i < entry.excludedOS.length; i++){
+					entry.intersectionOS[i] = (entry.excludedOS[i] == "x") ? "x" : "?";
+				}
+
+				if(entry.os)
+				for(var i = 0; i < entry.os.length; i++){
+					if(entry.intersectionOS[i] == "x") continue;
+					entry.intersectionOS[i] = (entry.os[i] == "") ? "?" : entry.os[i];
+				}
+
+				if(entry.os && entry.intersectionOS){
+					for(var i = 0; i < entry.intersectionOS.length; i++){
+						entry.accordanceToChildren[i] = (entry.intersectionOS[i] == entry.includedOS[i]);
+					}
+
+					entry.accordanceToChildren = (entry.accordanceToChildren.filter(v => v).length / entry.intersectionOS.length * 100) + "%";
+				}
+			}
+
+
+
+	const Json2csvParser = json2csv.Parser;
+	var fields = ["ProductCode", "intersectionOS", "os"];
+	var fields2 = ["ProductCode", "ram"];
+
+
+	let json2csvParser = new Json2csvParser({ fields });
+	let csv = json2csvParser.parse(newSet);
+
+	json2csvParser = new Json2csvParser({ fields2 });
+	let csv2 = json2csvParser.parse(ramTable);
+
+	document.body.innerHTML += csv2.replace(/"|,/g,' ').replace(/\n/gi, "\n<br>")+'<hr>';
+	document.body.innerHTML += csv.replace(/\n/gi, "\n<br>").replace(/""/g, '');
+
+
+  }
+
+
+  function recursiveInclude(array){
+  	  var rec = (children, parent, lastParent) => {
+  		    for(const entry of children) {
+      			findOS(entry);
+            if(entry.children){
+    				      entry.ramSum = 0;
+  				        rec(entry.children, parent, entry);
+    			  }else{
+                  ramTable.map((a,b)=>{
+                    if(a.ProductCode == entry.ProductCode){
+                        entry.ram = a.ram;
+                    }
+                  });
+                  if(!entry.ram){
+                  		entry.ram = Math.round(Math.PI*(ramTable.length+1) * 3000);
+                  		ramTable.push( { "ProductCode": entry.ProductCode, "ram": entry.ram } );
+                  }
+    			  }
+          }
+    	  }
+
+    	for(const entry of array) {
+    		entry.ramSum = 0;
+    		entry.minRam = 0;
+    		entry.alreadyIncludedRam = [];
+    		entry.includedOS = deepCopy(allOS);
+    		entry.excludedOS = [];
+
+    		findOS(entry);
+    		if(entry.children) rec(entry.children, entry, entry);
+    	}
+
+
+
+
+  }
+
+
+
+
+  var once = 0;
+function recursiveInference(array) {
+	  var rec = (children, parent, lastParent) => {
+      /*  if(!Array.isArray(children)){
+          calcInferences(children, parent, lastParent);
+        }*/
+		    for(const entry of children) {
+            if(entry.ram > parent.minRam) parent.minRam = entry.ram;
+      			if(lastParent && entry.ram){
+              if(parent.alreadyIncludedRam.indexOf(entry.ProductCode) == -1){
+                parent.ramSum += entry.ram;
+                parent.alreadyIncludedRam.push(entry.ProductCode);
+              }
+      				//lastParent.ramSum += entry.ram;
+      			}
+            calcInferences(entry, parent, lastParent);
+            if(entry.children){
+              rec(entry.children, parent, entry);
+            }
+			  }
+		}
+
+	for(const entry of array) {
+		if(entry.children) rec(entry.children, entry, entry);
+	}
+
+}
+
+
+
+function calcInferences(entry, parent, lastParent){
+  //what children allows
+	if(entry.os)
+    for(var i = 0; i < parent.includedOS.length; i++){
+      if( entry.os.indexOf(parent.includedOS[i]) == -1){
+        if(entry.os[i] == "x") parent.includedOS[i] = "x";
+        if(parent.includedOS[i] != "x") parent.includedOS[i] = "?";
+      }
+    }
+
+  if(!entry.os) entry.os = [];
+
+    //if( parent.ProductCode == "INM"  && entry.ProductCode == "WIR"){console.info(lastParent, entry);}
+
+
+  //logic top down --> explicit supports product
+  if(lastParent.os){
+    if(entry.ProductCode == "WIR" && once == 0){once++;console.log(entry, parent, lastParent); }
+    var inherit = false;
+    for(let i = 0; i < allOS.length; i++){
+      //if(entry.os[i])
+      //entry.os[i] = "";
+      //if(entry.os[i] != lastParent.os[i] && lastParent.os[i] != "x") {
+      if(!entry.os[i])
+        entry.os[i] = lastParent.os[i];
+
+
+        inherit = true;
+    //  }
+    }
+    entry.inherit = inherit;
+  }
+
+  //logic bottom up --> explicit doesnt support product
+		for(var i = 0; i < entry.os.length; i++){
+        if(entry.os[i] == "x"){
+          parent.excludedOS[i] = "x"; continue;
+        }else if(parent.excludedOS[i] != "x"){
+          parent.excludedOS[i] = "";
+        }
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+function findOS(entry){
+		  for(const os of osDataSet){
+				if(os[0] == entry.ProductCode && os.slice(3).filter( (a,b) => { return a != ""}).length != 0){
+  						entry.os = deepCopy(os.slice(3));
+              return;
+					}
+			}
+}
+
+ function getProductCode(ProductCode){
+	for(const product of newSet){
+		if(product.ProductCode == ProductCode){
+			console.log( product );
+		}
+	}
+ }
+
+  function deepCopy( obj ) {
+  if(obj) return JSON.parse( JSON.stringify( obj ) );
+  }
+  function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+
+
+  </script>
+</html>

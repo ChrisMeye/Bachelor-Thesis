@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1551820366936" name="duplicate:http://bachelor.chrismey.com/heavyweight.owl" uri="heavyweight-dataset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1551820366936" name="duplicate:http://bachelor.chrismey.com/heavyweight.owl" uri="heavyweight-inconsistency-dataset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1551820366936" name="duplicate:http://bachelor.chrismey.com/heavyweight.owl" uri="heavyweight-no-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1551820366936" name="http://bachelor.chrismey.com/lightweight.owl" uri="lightweight-no-data.owl"/>
+    </group>
+</catalog>

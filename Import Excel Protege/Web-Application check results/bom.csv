@@ -1,0 +1,598 @@
+ABE;;;AIC;;Software AG Installer Always Installed Components
+ABE;;;TPP;;webMethods Shared Third Party Jars
+ABE;;;WSC;;webMethods Shared Components
+AIC;;;WIR;;Software AG Installer
+APX;;;AIC;;Software AG Installer Always Installed Components
+APX;;;SDF;;Software AG Designer
+APX;;;WSS;;Web Services Stack
+ATC;;;AIC;;Software AG Installer Always Installed Components
+CAA;;;AIC;;Software AG Installer Always Installed Components
+CAS;;;AIC;;Software AG Installer Always Installed Components
+CCE;;;WIS;;webMethods Installer Shared Tools
+CCE;;;TPP;;webMethods Shared Third Party Jars
+CCE;;;WSC;;webMethods Shared Components
+CCE;;;ABE;;webMethods Asset Build Environment
+CCE;;;AIC;;Software AG Installer Always Installed Components
+CCE;;;CLI;;Command Line Tools
+CCE;;;DOC;;Third-party Product Documentation
+CCE;;;LAR;;Common Landscape Asset Registry
+CCE;;;OGI;;OSGi Platform
+CCE;;;SIN;;Security Infrastructure
+CCE;;;SPM;;webMethods Platform Manager
+CCE;;;TPS;;webMethods Shared Third Party Bundles
+CCE;;;WDY;;webMethods Deployer
+CCE;;;WIR;;Software AG Installer
+CDA;;;AIC;;Software AG Installer Always Installed Components
+CEL;;;AIC;;Software AG Installer Always Installed Components
+CEL;;;SPM;;webMethods Platform Manager
+CEP;;;AIC;;Software AG Installer Always Installed Components
+CEP;;;WIS;;webMethods Installer Shared Tools
+CLA;;;AIC;;Software AG Installer Always Installed Components
+CLA;;;WDY;;webMethods Deployer
+CLI;;;ABE;;webMethods Asset Build Environment
+CLI;;;AIC;;Software AG Installer Always Installed Components
+CLI;;;TPP;;webMethods Shared Third Party Jars
+CLI;;;TPS;;webMethods Shared Third Party Bundles
+CMA;;;AIC;;Software AG Installer Always Installed Components
+CMP;;;AIC;;Software AG Installer Always Installed Components
+CMP;;;TPS;;webMethods Shared Third Party Bundles
+CMP;;;WSC;;webMethods Shared Components
+CNA;;;AIC;;Software AG Installer Always Installed Components
+CPP;;;AIC;;Software AG Installer Always Installed Components
+CPP;;;SPM;;webMethods Platform Manager
+CPP;;;TPS;;webMethods Shared Third Party Bundles
+CPP;;;WIS;;webMethods Installer Shared Tools
+CPP;;;WSC;;webMethods Shared Components
+CSA;;;AIC;;Software AG Installer Always Installed Components
+CTP;;;AIC;;Software AG Installer Always Installed Components
+CTP;;;OGI;;OSGi Platform
+CTP;;;TPS;;webMethods Shared Third Party Bundles
+CTP;;;WSS;;Web Services Stack
+CUP;;;WSC;;webMethods Shared Components
+CUP;;;AIC;;Software AG Installer Always Installed Components
+CUP;;;CTP;;Software AG Runtime
+CWR;;;AIC;;Software AG Installer Always Installed Components
+DBO;;;AIC;;Software AG Installer Always Installed Components
+DBU;;;AIC;;Software AG Installer Always Installed Components
+DBU;;;SBP;;webMethods Business Console
+DDJ;;;AIC;;Software AG Installer Always Installed Components
+DDJ;;;SDF;;Software AG Designer
+DDJ;;;TPS;;webMethods Shared Third Party Bundles
+DDJ;;;WSC;;webMethods Shared Components
+DEV;;;NUM;;Software AG Universal Messaging
+DEV;;;AIC;;Software AG Installer Always Installed Components
+DEV;;;EVS;;Digital Event Persistence
+DEV;;;MIG;;webMethods Migration Framework
+DEV;;;OGI;;OSGi Platform
+DEV;;;SDF;;Software AG Designer
+DEV;;;SPM;;webMethods Platform Manager
+DEV;;;TPP;;webMethods Shared Third Party Jars
+DEV;;;TPS;;webMethods Shared Third Party Bundles
+DEV;;;WDY;;webMethods Deployer
+DEV;;;WIS;;webMethods Installer Shared Tools
+DEV;;;WSC;;webMethods Shared Components
+DEV;;;WSS;;Web Services Stack
+EDA;;;NUM;;Software AG Universal Messaging
+EDA;;;AIC;;Software AG Installer Always Installed Components
+EDA;;;DOC;;Third-party Product Documentation
+EDA;;;EVS;;Digital Event Persistence
+EDA;;;MIG;;webMethods Migration Framework
+EDA;;;OGI;;OSGi Platform
+EDA;;;SDF;;Software AG Designer
+EDA;;;SPM;;webMethods Platform Manager
+EDA;;;TPP;;webMethods Shared Third Party Jars
+EDA;;;TPS;;webMethods Shared Third Party Bundles
+EDA;;;WDY;;webMethods Deployer
+EDA;;;WSC;;webMethods Shared Components
+EDA;;;WSS;;Web Services Stack
+EVS;;;CEL;;Internal Data Store
+EVS;;;DEV;;Software AG Digital Event Services
+EVS;;;EDA;;Event Routing
+EVS;;;AIC;;Software AG Installer Always Installed Components
+EVS;;;OGI;;OSGi Platform
+EVS;;;TPS;;webMethods Shared Third Party Bundles
+GWM;;;AIC;;Software AG Installer Always Installed Components
+INM;;;SPM;;webMethods Platform Manager
+INM;;;TPP;;webMethods Shared Third Party Jars
+INM;;;WSS;;Web Services Stack
+INM;;;DDJ;;DataDirect Connect for JDBC
+INM;;;CTP;;Software AG Runtime
+INM;;;CPP;;Common PlugIn Package
+INM;;;AIC;;Software AG Installer Always Installed Components
+JBP;;;DEV;;Software AG Digital Event Services
+JBP;;;EDA;;Event Routing
+JBP;;;NUM;;Software AG Universal Messaging
+JBP;;;PAZ;;Apama Bundle
+JBP;;;RTM;;RTM Event Engine
+JBP;;;TDB;;Terracotta DB
+JBP;;;TEC;;Terracotta Ehcache Client
+JBP;;;TSC;;Terracotta DB TC Store Client
+JBP;;;AIC;;Software AG Installer Always Installed Components
+JBP;;;DOC;;Third-party Product Documentation
+JBP;;;SPM;;webMethods Platform Manager
+JBP;;;WIR;;Software AG Installer
+JBP;;;WIS;;webMethods Installer Shared Tools
+JBP;;;TAE;;Terracotta Enterprise Ehcache
+JBP;;;TAE;;Terracotta Enterprise Ehcache
+JBP;;;TAE;;Terracotta Enterprise Ehcache
+JBP;;;TAE;;Terracotta Enterprise Ehcache
+JDS;;;AIC;;Software AG Installer Always Installed Components
+JSI;;;DEV;;Software AG Digital Event Services
+JSI;;;EDA;;Event Routing
+JSI;;;NUM;;Software AG Universal Messaging
+JSI;;;PAZ;;Apama Bundle
+JSI;;;RTM;;RTM Event Engine
+JSI;;;TDB;;Terracotta DB
+JSI;;;TEC;;Terracotta Ehcache Client
+JSI;;;TSC;;Terracotta DB TC Store Client
+JSI;;;TAE;;Terracotta Enterprise Ehcache
+JSI;;;TAE;;Terracotta Enterprise Ehcache
+JSI;;;TAE;;Terracotta Enterprise Ehcache
+LAR;;;AIC;;Software AG Installer Always Installed Components
+LAR;;;OGI;;OSGi Platform
+LIP;;;NUM;;Software AG Universal Messaging
+LIP;;;CTP;;Software AG Runtime
+LIP;;;DOC;;Third-party Product Documentation
+LIP;;;PIE;;webMethods Integration Server
+LIP;;;SEC;;Common Service Container
+LIP;;;SIN;;Security Infrastructure
+LIP;;;WCD;;webMethods CloudStreams Development
+LIP;;;WST;;webMethods CloudStreams Server
+LIP;;;DOC;;Third-party Product Documentation
+LIP;;;NUM;;Software AG Universal Messaging
+LIP;;;WST;;webMethods CloudStreams Server
+LIP;;;SIN;;Security Infrastructure
+LIP;;;WCD;;webMethods CloudStreams Development
+LIP;;;SEC;;Common Service Container
+LIP;;;PIE;;webMethods Integration Server
+LIP;;;CTP;;Software AG Runtime
+LIP;;;LJP;;webMethods AgileApps Cloud
+LIP;;;LJP;;webMethods AgileApps Cloud
+LJP;;;DBO;;webMethods Dynamic Business Orchestrator
+LJP;;;PIE;;webMethods Integration Server
+LJP;;;AIC;;Software AG Installer Always Installed Components
+LJP;;;TPP;;webMethods Shared Third Party Jars
+LJP;;;CTP;;Software AG Runtime
+LJP;;;SIN;;Security Infrastructure
+LJP;;;WSC;;webMethods Shared Components
+LJP;;;NUM;;Software AG Universal Messaging
+MAD;;;AIC;;Software AG Installer Always Installed Components
+MAG;;;TPS;;webMethods Shared Third Party Bundles
+MAG;;;SPM;;webMethods Platform Manager
+MAG;;;OGI;;OSGi Platform
+MAG;;;AIC;;Software AG Installer Always Installed Components
+MAP;;;AIC;;Software AG Installer Always Installed Components
+MAP;;;OGI;;OSGi Platform
+MAP;;;SPM;;webMethods Platform Manager
+MAP;;;TPS;;webMethods Shared Third Party Bundles
+MAT;;;AIC;;Software AG Installer Always Installed Components
+MAT;;;OGI;;OSGi Platform
+MAT;;;SPM;;webMethods Platform Manager
+MAT;;;TPS;;webMethods Shared Third Party Bundles
+MIG;;;AIC;;Software AG Installer Always Installed Components
+MSC;;;PIE;;webMethods Integration Server
+MWS;;;AIC;;Software AG Installer Always Installed Components
+MWS;;;DDJ;;DataDirect Connect for JDBC
+MWS;;;TPP;;webMethods Shared Third Party Jars
+MWS;;;TPS;;webMethods Shared Third Party Bundles
+MWS;;;WSC;;webMethods Shared Components
+NSR;;;AIC;;Software AG Installer Always Installed Components
+NSR;;;SDF;;Software AG Designer
+NUM;;;AIC;;Software AG Installer Always Installed Components
+NUM;;;MIG;;webMethods Migration Framework
+NUM;;;TPS;;webMethods Shared Third Party Bundles
+NUM;;;WIS;;webMethods Installer Shared Tools
+NUM;;;WSC;;webMethods Shared Components
+OBE;;;TPP;;webMethods Shared Third Party Jars
+OBE;;;TPS;;webMethods Shared Third Party Bundles
+OBE;;;WIS;;webMethods Installer Shared Tools
+OBE;;;WSC;;webMethods Shared Components
+ODE;;;AIC;;Software AG Installer Always Installed Components
+ODE;;;CTP;;Software AG Runtime
+ODE;;;DDJ;;DataDirect Connect for JDBC
+ODE;;;SIN;;Security Infrastructure
+ODE;;;WIS;;webMethods Installer Shared Tools
+OGI;;;SSX;;Software AG Security eXtensions
+OGI;;;AIC;;Software AG Installer Always Installed Components
+OGI;;;MIG;;webMethods Migration Framework
+OGI;;;SIN;;Security Infrastructure
+OGI;;;TPS;;webMethods Shared Third Party Bundles
+OGI;;;WIS;;webMethods Installer Shared Tools
+OGI;;;WSC;;webMethods Shared Components
+OTN;;;EDA;;Event Routing
+OTN;;;AIC;;Software AG Installer Always Installed Components
+OTN;;;MWS;;My webMethods Server
+OTN;;;PIE;;webMethods Integration Server
+OTN;;;SPM;;webMethods Platform Manager
+OTN;;;TNS;;webMethods Trading Networks Server
+OTN;;;TPS;;webMethods Shared Third Party Bundles
+PAD;;;WIS;;webMethods Installer Shared Tools
+PAD;;;PAM;;Apama
+PAD;;;ZAD;;Zementis Server
+PAD;;;DOC;;Third-party Product Documentation
+PAF;;;PAM;;Apama
+PAF;;;AIC;;Software AG Installer Always Installed Components
+PAF;;;DOC;;Third-party Product Documentation
+PAF;;;SDF;;Software AG Designer
+PAF;;;WIS;;webMethods Installer Shared Tools
+PAJ;;;SDF;;Software AG Designer
+PAJ;;;TPP;;webMethods Shared Third Party Jars
+PAJ;;;DEV;;Software AG Digital Event Services
+PAJ;;;NUM;;Software AG Universal Messaging
+PAJ;;;PAK;;Apama Core Community Edition
+PAJ;;;TSC;;Terracotta DB TC Store Client
+PAJ;;;DEV;;Software AG Digital Event Services
+PAJ;;;NUM;;Software AG Universal Messaging
+PAJ;;;PAK;;Apama Core Community Edition
+PAJ;;;TSC;;Terracotta DB TC Store Client
+PAK;;;PAZ;;Apama Bundle
+PAM;;;PAK;;Apama Core Community Edition
+PAM;;;TPP;;webMethods Shared Third Party Jars
+PAM;;;DEV;;Software AG Digital Event Services
+PAM;;;PAZ;;Apama Bundle
+PAM;;;TSC;;Terracotta DB TC Store Client
+PAM;;;AIC;;Software AG Installer Always Installed Components
+PAM;;;DOC;;Third-party Product Documentation
+PAM;;;SDF;;Software AG Designer
+PAM;;;WIS;;webMethods Installer Shared Tools
+PAN;;;DEV;;Software AG Digital Event Services
+PAN;;;PAM;;Apama
+PAN;;;PAZ;;Apama Bundle
+PAN;;;AIC;;Software AG Installer Always Installed Components
+PAN;;;DOC;;Third-party Product Documentation
+PAN;;;SDF;;Software AG Designer
+PAN;;;WIS;;webMethods Installer Shared Tools
+PAX;;;WIS;;webMethods Installer Shared Tools
+PAX;;;DOC;;Third-party Product Documentation
+PAX;;;PAF;;Apama Capital Markets Foundation
+PAX;;;PAM;;Apama
+PAX;;;AIC;;Software AG Installer Always Installed Components
+PFC;;;TPS;;webMethods Shared Third Party Bundles
+PFC;;;TPP;;webMethods Shared Third Party Jars
+PFC;;;AIC;;Software AG Installer Always Installed Components
+PIE;;;DEV;;Software AG Digital Event Services
+PIE;;;EDA;;Event Routing
+PIE;;;AIC;;Software AG Installer Always Installed Components
+PIE;;;DDJ;;DataDirect Connect for JDBC
+PIE;;;DOC;;Third-party Product Documentation
+PIE;;;MIG;;webMethods Migration Framework
+PIE;;;OGI;;OSGi Platform
+PIE;;;SIN;;Security Infrastructure
+PIE;;;SPM;;webMethods Platform Manager
+PIE;;;TPP;;webMethods Shared Third Party Jars
+PIE;;;TPS;;webMethods Shared Third Party Bundles
+PIE;;;WED;;webMethods Service Development
+PIE;;;WSC;;webMethods Shared Components
+PIE;;;WSS;;Web Services Stack
+PLD;;;AIC;;Software AG Installer Always Installed Components
+PLD;;;DOC;;Third-party Product Documentation
+PLD;;;SDF;;Software AG Designer
+PLD;;;WED;;webMethods Service Development
+PLD;;;WEL;;Local Service Development
+PLS;;;AIC;;Software AG Installer Always Installed Components
+PLS;;;CTP;;Software AG Runtime
+PLS;;;DOC;;Third-party Product Documentation
+PLS;;;MWS;;My webMethods Server
+PLS;;;OGI;;OSGi Platform
+PLS;;;PIE;;webMethods Integration Server
+PLS;;;SPM;;webMethods Platform Manager
+PLS;;;TPS;;webMethods Shared Third Party Bundles
+PLS;;;WSS;;Web Services Stack
+PWB;;;DOC;;Third-party Product Documentation
+PWB;;;PAX;;Apama Base FIX Adapter
+PWB;;;PAF;;Apama Capital Markets Foundation
+PWB;;;PAM;;Apama
+PWD;;;PAX;;Apama Base FIX Adapter
+PWD;;;DOC;;Third-party Product Documentation
+PWD;;;PAF;;Apama Capital Markets Foundation
+PWD;;;PAM;;Apama
+PWD;;;AIC;;Software AG Installer Always Installed Components
+PWF;;;PAX;;Apama Base FIX Adapter
+PWF;;;DOC;;Third-party Product Documentation
+PWF;;;PAF;;Apama Capital Markets Foundation
+PWF;;;PAM;;Apama
+PWF;;;AIC;;Software AG Installer Always Installed Components
+PWM;;;DOC;;Third-party Product Documentation
+PWM;;;PAF;;Apama Capital Markets Foundation
+PWM;;;PAX;;Apama Base FIX Adapter
+PWM;;;PAM;;Apama
+PWM;;;AIC;;Software AG Installer Always Installed Components
+PWZ;;;PAX;;Apama Base FIX Adapter
+PWZ;;;DOC;;Third-party Product Documentation
+PWZ;;;PAF;;Apama Capital Markets Foundation
+PWZ;;;PAM;;Apama
+PWZ;;;AIC;;Software AG Installer Always Installed Components
+PYA;;;PAX;;Apama Base FIX Adapter
+PYA;;;DOC;;Third-party Product Documentation
+PYA;;;PAF;;Apama Capital Markets Foundation
+PYA;;;PAM;;Apama
+PYA;;;AIC;;Software AG Installer Always Installed Components
+PYB;;;PAF;;Apama Capital Markets Foundation
+PYB;;;PAX;;Apama Base FIX Adapter
+PYB;;;DOC;;Third-party Product Documentation
+PYB;;;PAM;;Apama
+PYB;;;AIC;;Software AG Installer Always Installed Components
+PYJ;;;DOC;;Third-party Product Documentation
+PYJ;;;PAX;;Apama Base FIX Adapter
+PYJ;;;PAF;;Apama Capital Markets Foundation
+PYJ;;;PAM;;Apama
+PYJ;;;AIC;;Software AG Installer Always Installed Components
+PYM;;;DOC;;Third-party Product Documentation
+PYM;;;PAF;;Apama Capital Markets Foundation
+PYM;;;PAX;;Apama Base FIX Adapter
+PYM;;;PAM;;Apama
+PYM;;;AIC;;Software AG Installer Always Installed Components
+PYO;;;PAX;;Apama Base FIX Adapter
+PYO;;;DOC;;Third-party Product Documentation
+PYO;;;PAF;;Apama Capital Markets Foundation
+PYO;;;PAM;;Apama
+PYO;;;AIC;;Software AG Installer Always Installed Components
+PYT;;;PAX;;Apama Base FIX Adapter
+PYT;;;DOC;;Third-party Product Documentation
+PYT;;;PAF;;Apama Capital Markets Foundation
+PYT;;;PAM;;Apama
+PYT;;;AIC;;Software AG Installer Always Installed Components
+PYX;;;DOC;;Third-party Product Documentation
+PYX;;;PAF;;Apama Capital Markets Foundation
+PYX;;;PAX;;Apama Base FIX Adapter
+PYX;;;PAM;;Apama
+PYX;;;AIC;;Software AG Installer Always Installed Components
+PYZ;;;DOC;;Third-party Product Documentation
+PYZ;;;PAX;;Apama Base FIX Adapter
+PYZ;;;PAF;;Apama Capital Markets Foundation
+PYZ;;;PAM;;Apama
+PYZ;;;AIC;;Software AG Installer Always Installed Components
+PZB;;;PAX;;Apama Base FIX Adapter
+PZB;;;DOC;;Third-party Product Documentation
+PZB;;;PAF;;Apama Capital Markets Foundation
+PZB;;;PAM;;Apama
+PZB;;;AIC;;Software AG Installer Always Installed Components
+PZC;;;DOC;;Third-party Product Documentation
+PZC;;;PAF;;Apama Capital Markets Foundation
+PZC;;;PAX;;Apama Base FIX Adapter
+PZC;;;PAM;;Apama
+PZC;;;AIC;;Software AG Installer Always Installed Components
+PZD;;;PAX;;Apama Base FIX Adapter
+PZD;;;DOC;;Third-party Product Documentation
+PZD;;;PAF;;Apama Capital Markets Foundation
+PZD;;;PAM;;Apama
+PZD;;;AIC;;Software AG Installer Always Installed Components
+PZF;;;DOC;;Third-party Product Documentation
+PZF;;;PAX;;Apama Base FIX Adapter
+PZF;;;PAF;;Apama Capital Markets Foundation
+PZF;;;PAM;;Apama
+PZF;;;AIC;;Software AG Installer Always Installed Components
+PZG;;;DOC;;Third-party Product Documentation
+PZG;;;PAF;;Apama Capital Markets Foundation
+PZG;;;PAX;;Apama Base FIX Adapter
+PZG;;;PAM;;Apama
+PZG;;;AIC;;Software AG Installer Always Installed Components
+PZH;;;PAX;;Apama Base FIX Adapter
+PZH;;;DOC;;Third-party Product Documentation
+PZH;;;PAF;;Apama Capital Markets Foundation
+PZH;;;PAM;;Apama
+PZH;;;AIC;;Software AG Installer Always Installed Components
+PZI;;;PAX;;Apama Base FIX Adapter
+PZI;;;DOC;;Third-party Product Documentation
+PZI;;;PAF;;Apama Capital Markets Foundation
+PZI;;;PAM;;Apama
+PZI;;;AIC;;Software AG Installer Always Installed Components
+PZK;;;DOC;;Third-party Product Documentation
+PZK;;;PAF;;Apama Capital Markets Foundation
+PZK;;;PAX;;Apama Base FIX Adapter
+PZK;;;PAM;;Apama
+PZK;;;AIC;;Software AG Installer Always Installed Components
+PZQ;;;DOC;;Third-party Product Documentation
+PZQ;;;PAX;;Apama Base FIX Adapter
+PZQ;;;PAF;;Apama Capital Markets Foundation
+PZQ;;;PAM;;Apama
+PZQ;;;AIC;;Software AG Installer Always Installed Components
+PZR;;;DOC;;Third-party Product Documentation
+PZR;;;PAF;;Apama Capital Markets Foundation
+PZR;;;PYA;;Apama Reuters RFA Adapter
+PZR;;;PAX;;Apama Base FIX Adapter
+PZR;;;PAM;;Apama
+PZR;;;AIC;;Software AG Installer Always Installed Components
+PZU;;;DOC;;Third-party Product Documentation
+PZU;;;PAF;;Apama Capital Markets Foundation
+PZU;;;PAX;;Apama Base FIX Adapter
+PZU;;;PAM;;Apama
+PZU;;;AIC;;Software AG Installer Always Installed Components
+PZX;;;DOC;;Third-party Product Documentation
+PZX;;;PAF;;Apama Capital Markets Foundation
+PZX;;;PAX;;Apama Base FIX Adapter
+PZX;;;PAM;;Apama
+PZX;;;AIC;;Software AG Installer Always Installed Components
+PZY;;;PAX;;Apama Base FIX Adapter
+PZY;;;DOC;;Third-party Product Documentation
+PZY;;;PAF;;Apama Capital Markets Foundation
+PZY;;;PAM;;Apama
+PZY;;;AIC;;Software AG Installer Always Installed Components
+PZZ;;;PAX;;Apama Base FIX Adapter
+PZZ;;;DOC;;Third-party Product Documentation
+PZZ;;;PAF;;Apama Capital Markets Foundation
+PZZ;;;PAM;;Apama
+PZZ;;;AIC;;Software AG Installer Always Installed Components
+SBP;;;AIC;;Software AG Installer Always Installed Components
+SBP;;;DOC;;Third-party Product Documentation
+SBP;;;MWS;;My webMethods Server
+SBP;;;WSC;;webMethods Shared Components
+SDF;;;AIC;;Software AG Installer Always Installed Components
+SDF;;;CPP;;Common PlugIn Package
+SEC;;;AIC;;Software AG Installer Always Installed Components
+SIN;;;AIC;;Software AG Installer Always Installed Components
+SIN;;;TPS;;webMethods Shared Third Party Bundles
+SPM;;;AIC;;Software AG Installer Always Installed Components
+SPM;;;OGI;;OSGi Platform
+SPM;;;SIN;;Security Infrastructure
+SPM;;;TPS;;webMethods Shared Third Party Bundles
+SPM;;;WIS;;webMethods Installer Shared Tools
+SSL;;;AIC;;Software AG Installer Always Installed Components
+SSX;;;AIC;;Software AG Installer Always Installed Components
+SUM;;;WIR;;Software AG Installer
+SUM;;;OGI;;OSGi Platform
+TAB;;;AIC;;Software AG Installer Always Installed Components
+TAB;;;TPP;;webMethods Shared Third Party Jars
+TAW;;;AIC;;Software AG Installer Always Installed Components
+TNS;;;EDA;;Event Routing
+TNS;;;AIC;;Software AG Installer Always Installed Components
+TNS;;;PIE;;webMethods Integration Server
+TNS;;;SPM;;webMethods Platform Manager
+TNS;;;TPS;;webMethods Shared Third Party Bundles
+TNS;;;WSC;;webMethods Shared Components
+TPP;;;AIC;;Software AG Installer Always Installed Components
+TPS;;;AIC;;Software AG Installer Always Installed Components
+TRL;;;OTN;;webMethods Trading Networks
+TRL;;;MAG;;webMethods ActiveTransfer Agent
+TRL;;;MAT;;webMethods ActiveTransfer Server
+TRL;;;CCE;;Software AG Command Central
+TRL;;;MAP;;webMethods ActiveTransfer Gateway
+TRL;;;JBP;;Software AG MashZone NextGen
+TRL;;;WST;;webMethods CloudStreams Server
+TRL;;;NUM;;Software AG Universal Messaging
+TRL;;;PIE;;webMethods Integration Server
+TRL;;;YAP;;webMethods API Portal
+TRL;;;YAI;;webMethods API Gateway
+TRL;;;TDB;;Terracotta DB
+VAN;;;TAE;;Terracotta Enterprise Ehcache
+VAN;;;TAE;;Terracotta Enterprise Ehcache
+WAR;;;EDA;;Event Routing
+WAR;;;AIC;;Software AG Installer Always Installed Components
+WAR;;;PIE;;webMethods Integration Server
+WAR;;;SPM;;webMethods Platform Manager
+WAR;;;TPS;;webMethods Shared Third Party Bundles
+WCD;;;AIC;;Software AG Installer Always Installed Components
+WCD;;;SDF;;Software AG Designer
+WCD;;;WED;;webMethods Service Development
+WCD;;;WEL;;Local Service Development
+WDA;;;AIC;;Software AG Installer Always Installed Components
+WDA;;;DDJ;;DataDirect Connect for JDBC
+WDA;;;WSC;;webMethods Shared Components
+WDY;;;AIC;;Software AG Installer Always Installed Components
+WDY;;;DOC;;Third-party Product Documentation
+WDY;;;LAR;;Common Landscape Asset Registry
+WDY;;;SIN;;Security Infrastructure
+WDY;;;TPS;;webMethods Shared Third Party Bundles
+WDY;;;WSS;;Web Services Stack
+WEL;;;AIC;;Software AG Installer Always Installed Components
+WEL;;;WED;;webMethods Service Development
+WFF;;;AIC;;Software AG Installer Always Installed Components
+WFF;;;PIE;;webMethods Integration Server
+WGL;;;AIC;;Software AG Installer Always Installed Components
+WGL;;;TPS;;webMethods Shared Third Party Bundles
+WID;;;CMP;;Common Monitoring Provider
+WID;;;AIC;;Software AG Installer Always Installed Components
+WID;;;OGI;;OSGi Platform
+WID;;;TPS;;webMethods Shared Third Party Bundles
+WID;;;WSC;;webMethods Shared Components
+WIS;;;AIC;;Software AG Installer Always Installed Components
+WIS;;;OGI;;OSGi Platform
+WIS;;;TPS;;webMethods Shared Third Party Bundles
+WMC;;;AIC;;Software AG Installer Always Installed Components
+WMC;;;DDJ;;DataDirect Connect for JDBC
+WMC;;;SDF;;Software AG Designer
+WMC;;;TPP;;webMethods Shared Third Party Jars
+WMC;;;WSC;;webMethods Shared Components
+WMD;;;AIC;;Software AG Installer Always Installed Components
+WMD;;;DDJ;;DataDirect Connect for JDBC
+WMD;;;SDF;;Software AG Designer
+WMD;;;WSC;;webMethods Shared Components
+WMI;;;OBE;;webMethods Optimize Base Engine
+WMI;;;WID;;webMethods Infrastructure Data Collector
+WMI;;;AIC;;Software AG Installer Always Installed Components
+WMI;;;DDJ;;DataDirect Connect for JDBC
+WMI;;;OGI;;OSGi Platform
+WMI;;;TPS;;webMethods Shared Third Party Bundles
+WMI;;;WSC;;webMethods Shared Components
+WMK;;;AIC;;Software AG Installer Always Installed Components
+WMN;;;AIC;;Software AG Installer Always Installed Components
+WMN;;;MWS;;My webMethods Server
+WMN;;;PIE;;webMethods Integration Server
+WMN;;;WSC;;webMethods Shared Components
+WMO;;;OBE;;webMethods Optimize Base Engine
+WMO;;;AIC;;Software AG Installer Always Installed Components
+WMO;;;DDJ;;DataDirect Connect for JDBC
+WMO;;;TPS;;webMethods Shared Third Party Bundles
+WMO;;;WSC;;webMethods Shared Components
+WMS;;;AIC;;Software AG Installer Always Installed Components
+WMS;;;WMD;;webMethods Process Development
+WMS;;;WSC;;webMethods Shared Components
+WOB;;;WMO;;webMethods Optimize for Process
+WOK;;;MWS;;My webMethods Server
+WOK;;;PIE;;webMethods Integration Server
+WOK;;;WMD;;webMethods Process Development
+WOK;;;TPS;;webMethods Shared Third Party Bundles
+WOK;;;WED;;webMethods Service Development
+WOK;;;TPP;;webMethods Shared Third Party Jars
+WOK;;;SPM;;webMethods Platform Manager
+WOK;;;DEV;;Software AG Digital Event Services
+WOK;;;AIC;;Software AG Installer Always Installed Components
+WOK;;;SDF;;Software AG Designer
+WOK;;;WSC;;webMethods Shared Components
+WPE;;;AIC;;Software AG Installer Always Installed Components
+WSC;;;AIC;;Software AG Installer Always Installed Components
+WSC;;;MIG;;webMethods Migration Framework
+WSC;;;TPP;;webMethods Shared Third Party Jars
+WSR;;;AIC;;Software AG Installer Always Installed Components
+WSR;;;WDG;;webMethods Locate Geocode Dataset
+WSR;;;WDV;;webMethods Locate Verify Dataset
+WSS;;;AIC;;Software AG Installer Always Installed Components
+WSS;;;CPP;;Common PlugIn Package
+WSS;;;CTP;;Software AG Runtime
+WSS;;;OGI;;OSGi Platform
+WSS;;;SDF;;Software AG Designer
+WSS;;;TPS;;webMethods Shared Third Party Bundles
+WST;;;AIC;;Software AG Installer Always Installed Components
+WST;;;PIE;;webMethods Integration Server
+WST;;;WSC;;webMethods Shared Components
+WST;;;WSS;;Web Services Stack
+WTN;;;AIC;;Software AG Installer Always Installed Components
+WTN;;;MWS;;My webMethods Server
+WTN;;;WSC;;webMethods Shared Components
+WWG;;;AIC;;Software AG Installer Always Installed Components
+WWG;;;SDF;;Software AG Designer
+WWW;;;AIC;;Software AG Installer Always Installed Components
+XCH;;;AIC;;Software AG Installer Always Installed Components
+XSC;;;WIS;;webMethods Installer Shared Tools
+XSC;;;AIC;;Software AG Installer Always Installed Components
+YAI;;;AIC;;Software AG Installer Always Installed Components
+YAI;;;CEL;;Internal Data Store
+YAI;;;DOC;;Third-party Product Documentation
+YAI;;;OGI;;OSGi Platform
+YAI;;;PIE;;webMethods Integration Server
+YAI;;;SPM;;webMethods Platform Manager
+YAI;;;TPP;;webMethods Shared Third Party Jars
+YAI;;;TPS;;webMethods Shared Third Party Bundles
+YAI;;;WSC;;webMethods Shared Components
+YAI;;;WSS;;Web Services Stack
+YAI;;;DOC;;Third-party Product Documentation
+YAI;;;TPP;;webMethods Shared Third Party Jars
+YAI;;;WSC;;webMethods Shared Components
+YAI;;;WSS;;Web Services Stack
+YAI;;;TPS;;webMethods Shared Third Party Bundles
+YAI;;;PIE;;webMethods Integration Server
+YAI;;;SPM;;webMethods Platform Manager
+YAI;;;OGI;;OSGi Platform
+YAI;;;AIC;;Software AG Installer Always Installed Components
+YAI;;;CEL;;Internal Data Store
+YAP;;;AIC;;Software AG Installer Always Installed Components
+YAP;;;DOC;;Third-party Product Documentation
+YAP;;;YAP;;webMethods API Portal
+YCS;;;JSI;;MashZone NextGen for Aware
+YCZ;;;TAE;;Terracotta Enterprise Ehcache
+YCZ;;;TAE;;Terracotta Enterprise Ehcache
+YPI;;;EDA;;Event Routing
+YPI;;;NUM;;Software AG Universal Messaging
+YPI;;;TPP;;webMethods Shared Third Party Jars
+YPI;;;TAE;;Terracotta Enterprise Ehcache
+YPI;;;TAE;;Terracotta Enterprise Ehcache
+YPI;;;TAE;;Terracotta Enterprise Ehcache
+ZAD;;;AIC;;Software AG Installer Always Installed Components
+ZIS;;;ZAD;;Zementis Server
+ZIS;;;AIC;;Software AG Installer Always Installed Components
+ZIS;;;PIE;;webMethods Integration Server
+ZUP;;;AIC;;Software AG Installer Always Installed Components
+A11;;;A12;;
+A12;;;A13;;
+A13;;;A14;;
+A12;;;A15;;

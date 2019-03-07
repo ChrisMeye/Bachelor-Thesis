@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"RAM","startColumn":"A","endColumn":"B","startRow":"1","endRow":"+","comment":"","rule":"Individual: @B*\nTypes: RAM\nFacts: RAMSize @B*\nAnnotations: rdfs:comment @A*","active":true}]}
